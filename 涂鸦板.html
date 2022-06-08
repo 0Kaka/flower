@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>涂鸦板</title>
+	<link rel="stylesheet" type="text/css" href="css/花店2.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
+	<style type="text/css">
+		body{
+			text-align: center;
+			background:url(img/背景.jpg);
+		}
+		canvas{
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<h1>将花像高定时装般打造,为TA独家定制的情人节花束</h1>
+		<h2>足够独一无二，才能突显TA的特别</h2>
+		<h3>画出你心中的那束花</h3>
+	</div>
+	<canvas id="cavsElem" width="900" height="600"></canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById("cavsElem");
+		canvas.style.border="1px solid #000"
+		var context=canvas.getContext("2d");
+		canvas.onmousedown=function(e){
+			// alert(e.clientX+":"+e.clientY);
+			var pa=canvas.getBoundingClientRect();
+			// alert(pa.left+":"+pa.top);
+			context.beginPath();
+			
+			canvas.onmousemove=function(e){
+				context.lineTo(e.clientX-pa.left,e.clientY-pa.top);
+				context.stroke();
+			}
+		}
+		canvas.onmouseup=function(){
+			canvas.onmousemove=null;
+		}
+		
+	</script>
+	<footer>
+		<div class="ccm-custom-style-main5">
+			<div class="container">
+				<div class="ct-box">
+					<div class="item col-sm-6">
+						<div class="ccm-custom-style-container ccm-custom-style-main5424426-3861"
+							style="width: 30%;min-width: 180px;">
+							<picture>
+								<source srcset="./img/绘画.jpg" media="(min-width: 900px)">
+								<source srcset="./img/绘画.jpg" media="(min-width: 768px)">
+								<source srcset="./img/绘画.jpg">
+								<img src="./img/绘画.jpg" alt="花艺培训 插花培训 花里"
+									class="ccm-image-block img-responsive bID-3861" title="花艺培训 插花培训 花里"></picture>
+						</div>
+	
+						<div class="col-sm-6">
+							<div class="heading-block heading-block-simple" data-template="pixel_fancy_title">
+								<h3 class="uppercase">
+									<span>往期佳作</span></h3>
+	
+								<h4 class="uppercase">Past Work</h4>
+							</div>
+							<p class="fw300 fs16">花里将实现你心中所想</p>
+							<div
+								class="ccm-custom-style-container ccm-custom-style-main5424427-1772 ccm-block-custom-template-pixel-btn-border-thin-right">
+								<a href="training/past_sessions.html" class="button button-border button-border-thin tright  "
+									data-template="pixel_btn_border_right">
+									了解更多
+									 <i class="fa fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="item col-sm-6">
+						<div class="ccm-custom-style-container ccm-custom-style-main5425428-2828"
+							style="width: 30%;min-width: 180px;">
+							<picture>
+								<source srcset="img/花里jpg" media="(min-width: 900px)">
+								<source srcset="img/花里jpg" media="(min-width: 768px)">
+								<source srcset="img/花里jpg">
+								<img src="img/花里jpg" alt="插花培训班" class="ccm-image-block img-responsive bID-2828"
+									title="上海花艺师培训"></picture>
+						</div>
+						<div class="col-sm-6">
+							<div class="heading-block heading-block-simple" data-template="pixel_fancy_title">
+								<h3 class="uppercase">
+									<span>鲜花专售</span></h3>
+								<h4 class="uppercase">Student Services</h4>
+							</div>
+							<p class="fw300 fs16">花里：最优质的服务，最快的速度为您送去美一份祝福</p>
+							<div
+								class="ccm-custom-style-container ccm-custom-style-main5425429-2979 ccm-block-custom-template-pixel-btn-border-thin-right">
+								<a href="flower.html" class="button button-border button-border-thin tright  "
+									data-template="pixel_btn_border_right">
+									前往 <i class="fa fa-angle-right"></i>
+								</a>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+	
+	
+			</div>
+	
+		</div>
+	
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

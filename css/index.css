@@ -1,0 +1,228 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#servlet {
+			position: relative;
+			height: 80%;
+			background-color: black;
+		}
+/* 导航栏 */
+.heima_nav{
+	width: 100%;
+	background-color: black;
+	border: none;
+	border-bottom: 1px solid black;
+	margin-bottom: 0;
+	position: fixed;  //固定页面
+}
+.heima_nav .navbar-brand{
+	color: #777;
+	height: 80px;
+	line-height: 50px;
+	
+}
+.heima_nav .navbar-brand:hover,
+.heima_nav .navbar-brand:focus{
+	color: #5E5E5E;
+	background-color: transparent;
+}
+.heima_nav .navbar-text{
+	color: #777;
+	
+}
+/* 设置导航栏每个菜单的样式 */
+.heima_nav .navbar-nav>li>a{
+	color: #777;
+	font-weight: 1000;
+	font-size: 20px;
+	height: 80px;
+	line-height: 50px;
+	font-family:Cursive;
+}
+.heima_nav .navbar-nav>li>a:hover,
+.heima_nav .navbar-nav>li>a:focus{
+	color: pink;
+	background-color: transparent;
+	border: 1px solid pink;
+}
+
+/* 设置汉堡按钮的样式 */
+.heima_nav .navbar-toggle{
+	border-color: #ddd;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.heima_nav .navbar-toggle:hover,
+.heima_nav .navbar-toggle:focus{
+	background-color: #ddd;
+}
+.heima_nav .navbar-toggle .icon-bar{
+	background-color: #888;
+}
+.heima_nav .navbar-collapse,
+.heima_nav .navbar-from{
+	border-color: #E7E7E7;
+}
+.heima_nav .navbar-nav>.open>a,
+.heima_nav .navbar-nav>.open>a:hover,
+.heima_nav .navbar-nav>.open>a:focus{0
+	color: #555;
+	background-color: #E7E7E7;
+}
+/* 当屏幕小于或等于767px时菜单的样式 */
+@media (max-width:767px) {
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a{
+		color: #777;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a:focus{
+		color: #333;
+		background-color: transparent;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a,
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a:focus{
+		color: #555;
+		background-color: #E7E7E7;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a,
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:focus{
+		color: #CCCCCC;
+		background-color: transparent;
+	}
+	.heima_nav .navbar-link{
+		color: #777;
+	}
+	.heima_nav .navbar-link:hover{
+		color: #333;
+	}
+	.heima_nav .btn-link{
+		color: #777;
+	}
+	.heima_nav .btn-link:hover,
+	.heima_nav .btn-link:focus{
+		color: #333;
+	}
+	.heima_nav .btn-link[disabled]:hover,
+	fieldset[disabled] .heima_nav .btn-link:hover,
+	.heima_nav .btn-link[disabled]:focus,
+	fieldset[disabled] .heima_nav .btn-link:focus{
+		color: #ccc;
+	}
+	
+}
+.navbar{
+	z-index: 99;
+}
+   /* logo */
+.navbar-brand{
+	display: flex;
+	align-items: center;
+}
+.navbar-brand img{
+	width: 54px;
+	margin-right: 5px;
+}
+
+.img-responsive{
+	display: block;
+	max-width: 100%;
+}
+
+.section{
+	margin-top: 30px;
+}
+
+.ct-box{
+	margin-top: 20px;
+}
+
+.online-more .item,
+.our .item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	flex-wrap: wrap;
+}
+.our .item img{
+	max-height: 240px;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+.online-more{
+	background-color: rgb(242,242,242);
+	padding: 40px 0;
+}
+
+.online-huayi .item,
+.huayi .item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	flex-wrap: wrap;
+}
+
+.our .item img{
+	max-height: 300px;
+	object-fit: cover;
+	margin: 0 auto;
+	
+}
+
+.online-huayi{
+	padding: 40px 0;
+}
+.containered img{
+	height: 100px;
+	width: 100px;
+}
+.huali_partner{
+	padding: 100px 0;
+	background-color: rgb(242,242,242);
+}
+
+.online-more .item,
+.flower .item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	flex-wrap: wrap;
+}
+.flower .item img{
+	max-height: 300px;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+/* 合作伙伴 */
+.heima_partner{
+	background: white;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.heima_partner ul{
+	list-style: none;
+	display: inline-block;
+	padding-left: 0;
+}
+.heima_partner ul li{
+	float: left;
+	font-size: 60px;
+	margin-left: 30px;
+}
+.heima_partner ul li img{
+	width: 150px;
+	height: 150px;
+	padding-top: 50px;
+}
+.heima_partner ul li:first-child{
+	margin-left: 0;
+}

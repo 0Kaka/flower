@@ -1,0 +1,162 @@
+/*大盒子*/
+.main{
+	
+	width:900px;/*宽度*/
+	border: 1px solid  #ffffff;
+	height: 440px;
+	margin: 0 auto;/*左右居中*/
+}
+
+/*小盒子*/
+.view{
+	position: relative;/*伪元素进行遮罩,伪元素要移动需要设置定位,相对定位*/
+	
+	float: left;/*一行一行排布*/
+	overflow: hidden;
+	
+}
+.view img{
+	/* width: 200px; */
+}
+
+/*隐藏部分即"多肉仙人掌"部分*/
+.hover{
+    width: 100%;/*宽度*/
+	background: rgba(44, 38, 36, 0.5);/*背景色*/
+	position: absolute;/*绝对定位*/
+	top: 65px;/*距离顶部间隙*/
+	left: 0;
+	right: 0;
+	text-align: center;/*文字居中*/
+	color: #fff;
+	transition:all 0.5s; /*过渡0.5s*/
+	z-index: 4000;/*层级*/
+	height: 0;/*重要点:高度为0后,黑色背景消失,"多肉仙人掌"文字溢出*/
+	overflow: hidden;/*隐藏*/
+	transform: rotate(55deg);/*旋转55度*/
+}
+
+/*"多肉仙人掌"下面绿色线*/
+.hover h3{
+	color:#ffffff;
+	border-bottom: 2px  solid  rgba(247, 247, 244, 0.5);
+	padding-bottom: 10px;
+}
+
+/*鼠标悬停时"多肉仙人掌"出现*/
+.view:hover .hover{
+	height: 120px;/*高度*/
+	transform: rotate(0deg);/*旋转0度*/
+}
+
+/*伪元素实现遮罩，before实现遮罩*/
+.view:before{
+	content:'';
+	position: absolute;
+	top: -260px;
+	right: 0px;
+	width: 360px;
+	height: 360px;
+	background-color: rgba(235, 235, 235, 0.5);
+	transform: rotate(55deg) translateX(60px);/*变形：旋转55度，水平（向右）移动60px   沿着x轴正方向移动60px*/
+	transform-origin: right top;/*设置变换中心点*/
+	transition:  all  0.6s ease 0.3s;/*过渡动画：所有属性都改变，时长0.5s,速率逐渐变慢，延迟0.3s*/
+}
+
+.view:hover:before{
+	top:0;
+}
+
+.view:after{
+	content:"";
+	position: absolute;
+	bottom: -260px;/*从下往上走*/
+	left: 0px;/*  */
+	width: 360px;
+	height: 360px;
+	background-color:  rgba(255, 255, 255, 0.5);
+	transform: rotate(55deg)  translateX(-60px);/*-60*/
+	transform-origin: 0 100%;
+	transition:  all  0.5s ease 0.3s;
+}
+
+.view:hover:after{
+	bottom:0;
+}
+/* footer */
+.ccm-custom-style-main5{
+	background-color: rgb(242,242,242);
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:15px;
+	padding-right: 15px;
+}
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+/* .ccm-custom-style-container.ccm-custom-style-main5424426-3861{
+	margin-bottom: 40px;
+} */
+.heading-block{
+	margin-bottom: 50px;
+}
+/* @media (max-width:767px) 
+	.heading-block h3{
+		font-size: 22px;
+	}
+.heading-block h3{
+	font-size: 26px;
+}	 */
+.heading-block>h3{
+	font-size: 27px;
+	color: red;
+	line-height: 30px;
+	
+}
+/* 英文 */
+.uppercase {
+    text-transform: uppercase !important;
+}
+.fw300{
+	
+	font-weight: 300!important;
+}
+.fs16{
+	font-size: 16px!important;
+}
+.ccm-custom-style-container.ccm-custom-style-main5424427-1772 {
+    text-align: right;
+}
+.ccm-custom-style-container.ccm-custom-style-main5425429-2979{
+	text-align: right;
+}
+a.button.button-border-thin, button.button.button-border-thin {
+	/* border: 1px solid #000000;
+	border-width: 2px; */
+    border-width: 1px;
+     line-height: 20px;
+}
+@media (min-width:768px)
+.col-sm-6{
+	width: 50%;
+	float: left;
+	
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.ccm-custom-style-main5 .item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

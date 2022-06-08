@@ -1,0 +1,94 @@
+body{
+	background: #f5f5f5;
+	background-color: #efefef;
+
+	
+}
+.hd_layout{
+width: 100%;
+/* 	max-width: 640px;
+	min-width: 300px; */
+margin: 0 auto;
+/* 	position: relative; */
+	
+}
+.hd_header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	z-index: 1000;
+	background-color: #2f2f2f;
+	
+	
+}
+.hd_header > .hd_header_box{
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	height: 40px;
+	position: relative;
+}
+/* 设置logo */
+ .hd_header>.hd_header_box>.icon_logo{
+	background: url(../img/图片2.png);
+	background-size: 50px auto;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:2px;
+	left: -270px;
+ }
+
+.hd_header>.hd_header_box> form{
+  width: 100%;
+	padding-left: 75px;
+	padding-right: 50px;
+	height: 40px;
+	position: relative;
+}
+/* 设置搜索栏样式 */
+.hd_header>.hd_header_box >form>input{
+	width: 40%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top:12px;
+	padding-left: 30px;
+	margin-left: 600px;
+	
+}
+/* 搜索图标 */
+.hd_header > .hd_header_box>form>.icon_search{
+	background: url(../img/2345_image_file_copy_1.jpg);
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	background-position: -60px -100px;
+	background-size:20px auto ;
+	top: 17px;
+	left:687px;
+	}
+	#myVideo{
+		width: 100%;
+		height: 780px;
+		position: absolute;
+		background-color: #000000;
+	}
+/* 	.hd_banner{
+		position: fixed;
+		width:1500px;
+		height: 1500px;
+		position: absolute;
+	} */
+/* 	.hd_banner>.clearfix{
+		width: 1000px;
+		height: 1000px;
+	}
+.hd_banner img{
+	width: 130%;
+	height: 900px;
+	
+    
+} */
